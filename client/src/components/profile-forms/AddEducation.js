@@ -30,7 +30,7 @@ const AddEducation = ({ addEducation, history }) => {
 
   return (
     <Fragment>
-      <h1 className="large text-primary">Add Your Education</h1>
+      <h1 className="large text-primary">Add Relevant Certification</h1>
       <p className="lead">
         <i className="fas fa-code-branch" /> Add any school or bootcamp that you
         have attended
@@ -46,7 +46,7 @@ const AddEducation = ({ addEducation, history }) => {
         <div className="form-group">
           <input
             type="text"
-            placeholder="* School or Bootcamp"
+            placeholder="* School or Bootcamp "
             name="school"
             value={school}
             onChange={onChange}
@@ -56,7 +56,7 @@ const AddEducation = ({ addEducation, history }) => {
         <div className="form-group">
           <input
             type="text"
-            placeholder="* Degree or Certificate"
+            placeholder="* Certificate or Diploma or Degree"
             name="degree"
             value={degree}
             onChange={onChange}
@@ -66,7 +66,7 @@ const AddEducation = ({ addEducation, history }) => {
         <div className="form-group">
           <input
             type="text"
-            placeholder="Field of Study"
+            placeholder="Specialisation"
             name="fieldofstudy"
             value={fieldofstudy}
             onChange={onChange}
@@ -85,7 +85,7 @@ const AddEducation = ({ addEducation, history }) => {
               value={current}
               onChange={() => setFormData({ ...formData, current: !current })}
             />{' '}
-            Current School
+            Current 
           </p>
         </div>
         <div className="form-group">
@@ -122,3 +122,4 @@ AddEducation.propTypes = {
 };
 
 export default connect(null, { addEducation })(AddEducation);
+ 

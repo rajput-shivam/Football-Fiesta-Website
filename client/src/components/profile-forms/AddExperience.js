@@ -22,10 +22,9 @@ const AddExperience = ({ addExperience, history }) => {
 
   return (
     <Fragment>
-      <h1 className="large text-primary">Add An Experience</h1>
+      <h1 className="large text-primary">Add Playing Experience</h1>
       <p className="lead">
-        <i className="fas fa-code-branch" /> Add any developer/programming
-        positions that you have had in the past
+        <i className="fas fa-code-branch" /> Add any role that you have had in the past
       </p>
       <small>* = required field</small>
       <form
@@ -38,7 +37,7 @@ const AddExperience = ({ addExperience, history }) => {
         <div className="form-group">
           <input
             type="text"
-            placeholder="* Job Title"
+            placeholder="* Role"
             name="title"
             value={title}
             onChange={onChange}
@@ -48,7 +47,7 @@ const AddExperience = ({ addExperience, history }) => {
         <div className="form-group">
           <input
             type="text"
-            placeholder="* Company"
+            placeholder="* Football Club"
             name="company"
             value={company}
             onChange={onChange}
@@ -79,7 +78,7 @@ const AddExperience = ({ addExperience, history }) => {
                 setFormData({ ...formData, current: !current });
               }}
             />{' '}
-            Current Job
+            Current 
           </p>
         </div>
         <div className="form-group">
@@ -97,7 +96,7 @@ const AddExperience = ({ addExperience, history }) => {
             name="description"
             cols="30"
             rows="5"
-            placeholder="Job Description"
+            placeholder="Experience Description"
             value={description}
             onChange={onChange}
           />
@@ -116,3 +115,4 @@ AddExperience.propTypes = {
 };
 
 export default connect(null, { addExperience })(AddExperience);
+ 

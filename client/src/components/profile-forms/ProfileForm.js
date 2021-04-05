@@ -78,79 +78,63 @@ const ProfileForm = ({
       <form className="form" onSubmit={onSubmit}>
         <div className="form-group">
           <select name="status" value={status} onChange={onChange}>
-            <option>* Select Professional Status</option>
-            <option value="Developer">Developer</option>
-            <option value="Junior Developer">Junior Developer</option>
-            <option value="Senior Developer">Senior Developer</option>
-            <option value="Manager">Manager</option>
-            <option value="Student or Learning">Student or Learning</option>
-            <option value="Instructor">Instructor or Teacher</option>
-            <option value="Intern">Intern</option>
+            <option className="form-text">*Status</option>
+            <option value="Football Player">Football Player</option>
+            <option value="Football Coach">Football Coach</option>
+            <option value="Football Club">Football Club</option>
+            <option value="Football Enthusiast">Football Enthusiast</option>
             <option value="Other">Other</option>
           </select>
           <small className="form-text">
-            Give us an idea of where you are at in your career
+            Give us an idea of what you want from this website
           </small>
         </div>
         <div className="form-group">
           <input
             type="text"
-            placeholder="Company"
+            placeholder="Current Football Club"
             name="company"
             value={company}
             onChange={onChange}
           />
           <small className="form-text">
-            Could be your own company or one you work for
+            Could be your own football club or one you played for
           </small>
         </div>
         <div className="form-group">
           <input
             type="text"
-            placeholder="Website"
+            placeholder="Website of Current Football Club"
             name="website"
             value={website}
             onChange={onChange}
           />
           <small className="form-text">
-            Could be your own or a company website
+            Could be your own football club website or one you played for
           </small>
         </div>
         <div className="form-group">
           <input
             type="text"
-            placeholder="Location"
+            placeholder="Current Location"
             name="location"
             value={location}
             onChange={onChange}
           />
           <small className="form-text">
-            City & state suggested (eg. Boston, MA)
+            City & state suggested (eg. Mumbai, Maharashtra)
           </small>
         </div>
         <div className="form-group">
           <input
             type="text"
-            placeholder="* Skills"
+            placeholder="*Skills"
             name="skills"
             value={skills}
             onChange={onChange}
           />
           <small className="form-text">
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
-          </small>
-        </div>
-        <div className="form-group">
-          <input
-            type="text"
-            placeholder="Github Username"
-            name="githubusername"
-            value={githubusername}
-            onChange={onChange}
-          />
-          <small className="form-text">
-            If you want your latest repos and a Github link, include your
-            username
+            Please use comma separated values 
           </small>
         </div>
         <div className="form-group">
@@ -255,3 +239,4 @@ const mapStateToProps = state => ({
 export default connect(mapStateToProps, { createProfile, getCurrentProfile })(
   ProfileForm
 );
+ 
