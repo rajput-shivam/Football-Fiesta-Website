@@ -19,15 +19,15 @@ const PostForm = ({ addPost }) => {
           setText('');
         }}
       >
-        <textarea
-          name='text'
-          cols='30'
-          rows='5'
-          placeholder='Create a post'
-          value={text}
-          onChange={e => setText(e.target.value)}
-          required
-        />
+              <textarea 
+                name='text'
+                cols='30'
+                rows='5'
+                value={text}
+                onChange={e => setText(e.target.value)}
+                placeholder='Create a post'
+                required />
+        
         <input type='submit' className='btn btn-dark my-1' value='Submit' />
       </form>
     </div>
