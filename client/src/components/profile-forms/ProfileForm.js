@@ -128,13 +128,13 @@ const ProfileForm = ({
         <div className="form-group">
           <input
             type="text"
-            placeholder="*Skills"
+            placeholder="*Contact Details"
             name="skills"
             value={skills}
             onChange={onChange}
           />
           <small className="form-text">
-            Please use comma separated values 
+            Please Input Contact Details Separated By Commas
           </small>
         </div>
         <div className="form-group">
